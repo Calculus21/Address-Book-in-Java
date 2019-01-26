@@ -1,0 +1,195 @@
+//AddressType Class
+package projectPackage;
+
+
+public class addressType {
+	
+	private String streetAddress;
+	private String City;
+	private String state;
+	private String ZipCode;
+	
+	/**
+	 * Default addressType constructor
+	 * @param strtAddresses
+	 * @param cty
+	 * @param statee
+	 * @param zipCode
+	 */
+	public addressType(String strtAddresses, String cty, String statee, String zipCode) {
+		
+		this.streetAddress = strtAddresses;
+		this.City = cty;
+		this.state = statee;
+		this.ZipCode = zipCode;
+	}
+	
+	/**
+	 * Returns array of street addresses.
+	 * @return
+	 */
+	public String getStreetAddresses() {
+		return streetAddress;
+	}
+	
+	/**
+	 * Returns city.
+	 * @return
+	 */
+	public String getCity() {
+		return City;
+	}
+	
+	/**
+	 * Returns State.
+	 * @return
+	 */
+	public String getState() {
+		return state;
+	}
+	
+	/**
+	 * Returns Zip code.
+	 * @return
+	 */
+	public String getZipCode() {
+		return ZipCode;
+	}
+
+	/**
+	 * Sets street address array to passed array.
+	 * @param addresses
+	 */
+	public void setStreetAddresses(String addresses) {
+		this.streetAddress = addresses;
+	}
+
+	/**
+	 * Sets City to passed value.
+	 * @param city
+	 */
+	public void setCity(String city) {
+		this.City = city;
+	}
+	
+	/**
+	 * Sets state to passed value.
+	 * @param state
+	 */
+	public void setState(String state) {
+		this.state = state;
+	}
+	
+	/**
+	 * Sets Zip Code to passed value.
+	 * @param ZipCode
+	 */
+	public void setZipCode(String ZipCode) {
+		this.ZipCode = ZipCode;
+	}
+	
+	/**
+	 * Prints full address to the console.
+	 */
+	public void printFullAddress() {
+		System.out.println(this.streetAddress+ " "+ this.City + " "+ this.state+ " "+ this.ZipCode);
+	}
+	
+	/**
+	 * Returns full address as a string
+	 * @return
+	 */
+	public String getFullAddress() {
+		return this.streetAddress+ " "+ this.City + " "+ this.state+ " "+ this.ZipCode;
+	}
+	
+}
+
+
+//PersonType Class 
+package projectPackage;
+
+//Written by Calculo
+
+/**
+ * This class stores first and lastname string. Also provides functions to get and set variables.
+ * @author Calculo
+ *
+ */
+public class personType {
+	
+	private String firstName;
+	private String lastName;
+	
+	/*
+	 * Default personType constructor. Initializes first & last name.
+	 */
+	public personType() { 
+	
+		firstName = ""; 
+		lastName = "";
+	}
+	
+	/**
+	 * Constructor with parameters. First and last name.
+	 * @param f
+	 * @param l
+	 */
+	public personType(String f, String l) { 
+		
+		firstName = f; 
+		lastName = l;
+	}
+	
+	/**
+	 * Prints first and last name as a string on the console. 
+	 */
+	public void printName() {
+		System.out.print(firstName + " "+ lastName);
+	}
+	
+	/**
+	 * Sets the first and last name to passed string parameters.
+	 * @param f
+	 * @param l
+	 */
+	public void setName(String f, String l) { 
+		
+		firstName = f; 
+		lastName = l;
+	}
+	
+	/**
+	 * Sets the first name to passed string parameters.
+	 * @param f
+	 */
+	public void setFirstName(String f) { 
+		
+		firstName = f; 
+	}
+	
+	/**
+	 * Sets the last name to passed string parameters.
+	 * @param l
+	 */
+	public void setLastName(String l) {
+		lastName = l;
+	}
+	
+	/**
+	 * returns first name as a string.
+	 * @return
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	/**
+	 * returns last name as a string.
+	 * @return
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+}
